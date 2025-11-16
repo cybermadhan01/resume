@@ -6,6 +6,7 @@ import Projects from '../components/Projects/Projects.jsx'
 import Skills from '../components/Skills/Skills.jsx'
 import About from '../components/About/About.jsx'
 import Contact from '../components/Contact/Contact.jsx'
+import Header from '../components/Layout/Header.jsx'
 import { getPreferredTheme, applyTheme } from '../utils/helpers.js'
 
 const App = () => {
