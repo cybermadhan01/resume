@@ -46,7 +46,8 @@ const App = () => {
     <ThemeProvider theme={themeConfig}>
       <div className="app" data-theme={theme}>
         <AnimatePresence mode="wait">
-          <motion.div
+          <Header theme={themeConfig} toggleTheme={toggleTheme} />
+        <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
