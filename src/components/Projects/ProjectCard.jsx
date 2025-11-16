@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { isTouchDevice } from '../../utils/helpers.js'
 import { card3DHover } from '../../utils/animations.js'
-import { Badge, Button } from '../Common/Common.styles.js'
+import { Badge } from '../Common/Common.styles.js'
 
 const ProjectCard = ({ project, index, filter = 'all' }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
