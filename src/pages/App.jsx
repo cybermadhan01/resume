@@ -54,6 +54,8 @@ const App = () => {
             <Hero />
             <Projects />
             <Skills />
+            <About />
+            <Contact />
           </motion.div>
         </AnimatePresence>
       </div>
