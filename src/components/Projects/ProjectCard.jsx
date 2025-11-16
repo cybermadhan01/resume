@@ -228,31 +228,50 @@ const ProjectCard = ({ project, index, filter = 'all' }) => {
               alignItems: 'center'
             }}
           >
-            <Button
-              variant="primary"
-              size="small"
-              href={project.demoUrl}
+            <motion.button
               style={{
                 flex: 1,
+                padding: '0.75rem 1.5rem',
+                background: 'var(--color-primary)',
+                color: 'white',
+                border: 'none',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontSize: '0.9rem',
+                fontWeight: '600',
                 textDecoration: 'none',
-                padding: '0.75rem 1.5rem'
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem'
               }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => window.open(project.demoUrl, '_blank')}
             >
               🚀 Live Demo
-            </Button>
+            </motion.button>
 
-            <Button
-              variant="outline"
-              size="small"
-              href={project.githubUrl}
+            <motion.button
               style={{
-                textDecoration: 'none',
                 padding: '0.75rem',
-                minWidth: '45px'
+                minWidth: '45px',
+                background: 'transparent',
+                color: 'var(--color-primary)',
+                border: '2px solid var(--color-primary)',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontSize: '1rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
               }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => window.open(project.githubUrl, '_blank')}
             >
               📁
-            </Button>
+            </motion.button>
           </div>
         </div>
       </motion.div>
